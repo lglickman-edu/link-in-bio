@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Lucas Glickman's Links</title>
-    <style>
-      * {
-        border: 1px red dashed;
-      }
-    </style>
-  </head>
-  <body>
-    <div class=main-container>
-      <div class="image-row">
-        <img src="/thumbnails/profile-pic.png" alt = "Lucas Glickman headshot">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucas Glickman's Links</title>
+  <style>
+    * {
+      border: 1px red dashed;
+    }
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1); /* made at https://learnui.design/tools/gradient-generator.html */
+    }
+
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+    
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 48px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class=main-container>
+    <div class="image-row">
+      <img class="avatar-image" src="/thumbnails/profile-pic.png" alt = "Lucas Glickman headshot">
+    </div>
+    <div class = "name-row">
+      Lucas Glickman
+    </div>
+    <div class = "social-icons-row">
+      <a href = "https://github.com/lglickman-edu" target = "_blank"> Github </a>
+      <a href = "https://www.linkedin.com/in/lucas-glickman/" target = "_blank"> LinkedIn </a>
+      <a href = "https://www.instagram.com/lucasg729/#" target = "_blank"> Instagram </a>
+    </div>
+    <div class = "links-row">
+      <div class = "item">
+        <img class = "thumbnail" src = "/thumbnails/tokyo.jpg">
+        <a target=""_blank" href="https://www.japan.travel/en/destinations/kanto/tokyo/"> Travel </a>
       </div>
-      <div class = "name-row">
-        Lucas Glickman
+      <div class = "item">
+        <img class = "thumbnail" src = "/thumbnails/monaco.jpg">
+        <a target=""_blank" href="https://www.formula1.com/"> Formula One </a>
       </div>
-      <div class = "social-icons-row">
-        <a href = "https://github.com/lglickman-edu" target = "_blank"> Github </a>
-        <a href = "https://www.linkedin.com/in/lucas-glickman/" target = "_blank"> LinkedIn </a>
-        <a href = "https://www.instagram.com/lucasg729/#" target = "_blank"> Instagram </a>
-      </div>
-      <div class = "links-row">
-        <div class = "item">
-          <img src = "/thumbnails/tokyo.jpg">
-          <a target=""_blank" href="https://www.japan.travel/en/destinations/kanto/tokyo/"> Travel </a>
-        </div>
-        <div class = "item">
-          <img src = "/thumbnails/monaco.jpg">
-          <a target=""_blank" href="https://www.formula1.com/"> Formula One </a>
-        </div>
-        <div class = "item">
-          <img src = "/thumbnails/music.jpg">
-          <a target=""_blank" href="https://open.spotify.com/"> Music Recommendations </a>
-        </div>
+      <div class = "item">
+        <img class = "thumbnail" src = "/thumbnails/music.jpg">
+        <a target=""_blank" href="https://open.spotify.com/"> Music Recommendations </a>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
